@@ -1,0 +1,9 @@
+C:\Users\boehm\OneDrive\Dokumente\PSoC Creator\4.2\Projekt_Sensordatenerfassung\BLE_Kommunikation.cydsn\BLE_Kommunikation.cyprj|d3b552a6-ee6a-4825-9c5a-0c269ef49fff
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\default\CyAnnotationLibrary\CyAnnotationLibrary.cylib\CyAnnotationLibrary.cyprj|fb2fdeef-108c-4f13-aa69-835a90831772
+C:\Users\boehm\OneDrive\Dokumente\PSoC Creator\4.2\Downloads ( 4.2).cylib\Downloads ( 4.2).cyprj|8940c34d-48cc-402b-b1d6-43e47d2b81b8
+C:\Users\boehm\OneDrive\Dokumente\PSoC Creator\4.1\Downloads ( 4.1).cylib\Downloads ( 4.1).cyprj|de61da2e-7b7d-479e-9d05-3d2c5d97b299
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibraryupdates\CyComponentLibraryUpdates.cylib\CyComponentLibraryUpdates.cyprj|b95566ed-330b-42d4-a307-50f4a89fcd38
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cycomponentlibrary\CyComponentLibrary.cylib\CyComponentLibrary.cyprj|eff369db-65f2-4ad1-a64c-d012b5b9c9b4
+C:\Program Files (x86)\Cypress\PSoC Creator\4.2\PSoC Creator\psoc\content\cyprimitives\CyPrimitives.cylib\CyPrimitives.cyprj|7fe7255c-29a4-49f2-a9ac-0d7208c5102a
+C:\Users\boehm\OneDrive\Dokumente\PSoC Creator\4.2\CE220567_BLE_Thermometer\CE220567_BLE_Thermometer.cydsn\CE220567_BLE_Thermometer.cyprj|72c0bdb3-45c0-4af0-9cb4-57bcdccd9464
+C:\Users\boehm\OneDrive\Dokumente\PSoC Creator\CE218135_BLE_Proximity\CE218135_BLE_Proximity.cydsn\CE218135_BLE_Proximity.cyprj|ad471f2e-1ebe-417d-8829-33b1afc64fc4

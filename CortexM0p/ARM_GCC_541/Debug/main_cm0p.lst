@@ -1,0 +1,1111 @@
+ARM GAS  C:\Users\boehm\AppData\Local\Temp\ccujyY7N.s 			page 1
+
+
+   1              		.syntax unified
+   2              		.cpu cortex-m0plus
+   3              		.fpu softvfp
+   4              		.eabi_attribute 20, 1
+   5              		.eabi_attribute 21, 1
+   6              		.eabi_attribute 23, 3
+   7              		.eabi_attribute 24, 1
+   8              		.eabi_attribute 25, 1
+   9              		.eabi_attribute 26, 1
+  10              		.eabi_attribute 30, 1
+  11              		.eabi_attribute 34, 0
+  12              		.eabi_attribute 18, 4
+  13              		.thumb
+  14              		.syntax unified
+  15              		.file	"main_cm0p.c"
+  16              		.text
+  17              	.Ltext0:
+  18              		.cfi_sections	.debug_frame
+  19              		.section	.text.main,"ax",%progbits
+  20              		.align	2
+  21              		.global	main
+  22              		.code	16
+  23              		.thumb_func
+  24              		.type	main, %function
+  25              	main:
+  26              	.LFB276:
+  27              		.file 1 "main_cm0p.c"
+   1:main_cm0p.c   **** /* ========================================
+   2:main_cm0p.c   ****  *
+   3:main_cm0p.c   ****  * Copyright YOUR COMPANY, THE YEAR
+   4:main_cm0p.c   ****  * All Rights Reserved
+   5:main_cm0p.c   ****  * UNPUBLISHED, LICENSED SOFTWARE.
+   6:main_cm0p.c   ****  *
+   7:main_cm0p.c   ****  * CONFIDENTIAL AND PROPRIETARY INFORMATION
+   8:main_cm0p.c   ****  * WHICH IS THE PROPERTY OF your company.
+   9:main_cm0p.c   ****  *
+  10:main_cm0p.c   ****  * ========================================
+  11:main_cm0p.c   **** */
+  12:main_cm0p.c   **** #include "project.h"
+  13:main_cm0p.c   **** 
+  14:main_cm0p.c   **** int main(void)
+  15:main_cm0p.c   **** {
+  28              		.loc 1 15 0
+  29              		.cfi_startproc
+  30              		@ Volatile: function does not return.
+  31              		@ args = 0, pretend = 0, frame = 0
+  32              		@ frame_needed = 0, uses_anonymous_args = 0
+  33 0000 10B5     		push	{r4, lr}
+  34              		.cfi_def_cfa_offset 8
+  35              		.cfi_offset 4, -8
+  36              		.cfi_offset 14, -4
+  37              	.LBB4:
+  38              	.LBB5:
+  39              		.file 2 "Generated_Source\\PSoC6\\pdl\\cmsis/include/cmsis_gcc.h"
+   1:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** /**************************************************************************//**
+   2:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * @file     cmsis_gcc.h
+   3:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * @brief    CMSIS compiler GCC header file
+ARM GAS  C:\Users\boehm\AppData\Local\Temp\ccujyY7N.s 			page 2
+
+
+   4:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * @version  V5.0.1
+   5:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * @date     02. February 2017
+   6:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  ******************************************************************************/
+   7:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** /*
+   8:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * Copyright (c) 2009-2017 ARM Limited. All rights reserved.
+   9:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  *
+  10:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * SPDX-License-Identifier: Apache-2.0
+  11:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  *
+  12:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * Licensed under the Apache License, Version 2.0 (the License); you may
+  13:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * not use this file except in compliance with the License.
+  14:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * You may obtain a copy of the License at
+  15:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  *
+  16:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * www.apache.org/licenses/LICENSE-2.0
+  17:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  *
+  18:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * Unless required by applicable law or agreed to in writing, software
+  19:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * distributed under the License is distributed on an AS IS BASIS, WITHOUT
+  20:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+  21:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * See the License for the specific language governing permissions and
+  22:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  * limitations under the License.
+  23:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  */
+  24:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** 
+  25:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef __CMSIS_GCC_H
+  26:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #define __CMSIS_GCC_H
+  27:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** 
+  28:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** /* ignore some GCC warnings */
+  29:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #pragma GCC diagnostic push
+  30:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #pragma GCC diagnostic ignored "-Wsign-conversion"
+  31:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #pragma GCC diagnostic ignored "-Wconversion"
+  32:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #pragma GCC diagnostic ignored "-Wunused-parameter"
+  33:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** 
+  34:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** /* CMSIS compiler specific defines */
+  35:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __ASM
+  36:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __ASM                     __asm
+  37:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
+  38:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __INLINE
+  39:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __INLINE                  inline
+  40:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
+  41:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __STATIC_INLINE
+  42:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __STATIC_INLINE           static inline
+  43:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
+  44:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __NO_RETURN
+  45:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __NO_RETURN               __attribute__((noreturn))
+  46:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
+  47:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __USED
+  48:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __USED                    __attribute__((used))
+  49:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
+  50:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __WEAK
+  51:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __WEAK                    __attribute__((weak))
+  52:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
+  53:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __UNALIGNED_UINT32
+  54:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #pragma GCC diagnostic push
+  55:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #pragma GCC diagnostic ignored "-Wpacked"
+  56:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #pragma GCC diagnostic ignored "-Wattributes"
+  57:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   struct __attribute__((packed)) T_UINT32 { uint32_t v; };
+  58:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #pragma GCC diagnostic pop
+  59:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __UNALIGNED_UINT32(x)     (((struct T_UINT32 *)(x))->v)
+  60:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
+ARM GAS  C:\Users\boehm\AppData\Local\Temp\ccujyY7N.s 			page 3
+
+
+  61:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __ALIGNED
+  62:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __ALIGNED(x)              __attribute__((aligned(x)))
+  63:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
+  64:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __PACKED
+  65:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __PACKED                  __attribute__((packed, aligned(1)))
+  66:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
+  67:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #ifndef   __PACKED_STRUCT
+  68:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   #define __PACKED_STRUCT           struct __attribute__((packed, aligned(1)))
+  69:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** #endif
+  70:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** 
+  71:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** 
+  72:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** /* ###########################  Core Function Access  ########################### */
+  73:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** /** \ingroup  CMSIS_Core_FunctionInterface
+  74:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****     \defgroup CMSIS_Core_RegAccFunctions CMSIS Core Register Access Functions
+  75:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   @{
+  76:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  */
+  77:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** 
+  78:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** /**
+  79:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   \brief   Enable IRQ Interrupts
+  80:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   \details Enables IRQ interrupts by clearing the I-bit in the CPSR.
+  81:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****            Can only be executed in Privileged modes.
+  82:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****  */
+  83:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** __attribute__((always_inline)) __STATIC_INLINE void __enable_irq(void)
+  84:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h **** {
+  85:Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h ****   __ASM volatile ("cpsie i" : : : "memory");
+  40              		.loc 2 85 0
+  41              		.syntax divided
+  42              	@ 85 "Generated_Source\PSoC6\pdl\cmsis/include/cmsis_gcc.h" 1
+  43 0002 62B6     		cpsie i
+  44              	@ 0 "" 2
+  45              		.thumb
+  46              		.syntax unified
+  47              	.LBE5:
+  48              	.LBE4:
+  16:main_cm0p.c   ****     __enable_irq(); /* Enable global interrupts. */
+  17:main_cm0p.c   ****     
+  18:main_cm0p.c   ****     /* Start BLE */
+  19:main_cm0p.c   ****     if(Cy_BLE_Start(NULL) == CY_BLE_SUCCESS){
+  49              		.loc 1 19 0
+  50 0004 0020     		movs	r0, #0
+  51 0006 FFF7FEFF 		bl	Cy_BLE_Start
+  52              	.LVL0:
+  53 000a 0028     		cmp	r0, #0
+  54 000c 03D1     		bne	.L2
+  20:main_cm0p.c   ****         /* Enable CM4.  CY_CORTEX_M4_APPL_ADDR must be updated if CM4 memory layout is changed. */
+  21:main_cm0p.c   ****         Cy_SysEnableCM4(CY_CORTEX_M4_APPL_ADDR);
+  55              		.loc 1 21 0
+  56 000e 0548     		ldr	r0, .L5
+  57 0010 FFF7FEFF 		bl	Cy_SysEnableCM4
+  58              	.LVL1:
+  59 0014 03E0     		b	.L4
+  60              	.L2:
+  22:main_cm0p.c   ****         
+  23:main_cm0p.c   ****     }
+  24:main_cm0p.c   ****     else
+  25:main_cm0p.c   ****     {      
+  26:main_cm0p.c   ****         /* Halt the CPU if the BLE initialization failed */
+ARM GAS  C:\Users\boehm\AppData\Local\Temp\ccujyY7N.s 			page 4
+
+
+  27:main_cm0p.c   ****         CY_ASSERT(0u != 0u);
+  61              		.loc 1 27 0 discriminator 1
+  62 0016 1B21     		movs	r1, #27
+  63 0018 0348     		ldr	r0, .L5+4
+  64 001a FFF7FEFF 		bl	Cy_SysLib_AssertFailed
+  65              	.LVL2:
+  66              	.L4:
+  28:main_cm0p.c   ****     }
+  29:main_cm0p.c   **** 
+  30:main_cm0p.c   ****     for(;;)
+  31:main_cm0p.c   ****     {
+  32:main_cm0p.c   ****         /* Cy_Ble_ProcessEvents() allows the BLE stack to process pending events */
+  33:main_cm0p.c   ****         Cy_BLE_ProcessEvents();
+  67              		.loc 1 33 0 discriminator 1
+  68 001e FFF7FEFF 		bl	Cy_BLE_ProcessEvents
+  69              	.LVL3:
+  70 0022 FCE7     		b	.L4
+  71              	.L6:
+  72              		.align	2
+  73              	.L5:
+  74 0024 00000810 		.word	268959744
+  75 0028 00000000 		.word	.LC0
+  76              		.cfi_endproc
+  77              	.LFE276:
+  78              		.size	main, .-main
+  79              		.section	.rodata.str1.4,"aMS",%progbits,1
+  80              		.align	2
+  81              	.LC0:
+  82 0000 6D61696E 		.ascii	"main_cm0p.c\000"
+  82      5F636D30 
+  82      702E6300 
+  83              		.text
+  84              	.Letext0:
+  85              		.file 3 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+  86              		.file 4 "c:\\program files (x86)\\cypress\\psoc creator\\4.2\\psoc creator\\import\\gnu\\arm\\5.4.
+  87              		.file 5 "Generated_Source\\PSoC6\\pdl\\drivers/peripheral/syslib/cy_syslib.h"
+  88              		.file 6 "Generated_Source\\PSoC6/BLE.h"
+  89              		.file 7 "./system_psoc63.h"
+  90              		.file 8 "Generated_Source\\PSoC6\\pdl\\middleware/ble/cy_ble_stack.h"
+  91              		.section	.debug_info,"",%progbits
+  92              	.Ldebug_info0:
+  93 0000 7C020000 		.4byte	0x27c
+  94 0004 0400     		.2byte	0x4
+  95 0006 00000000 		.4byte	.Ldebug_abbrev0
+  96 000a 04       		.byte	0x4
+  97 000b 01       		.uleb128 0x1
+  98 000c 2F050000 		.4byte	.LASF52
+  99 0010 0C       		.byte	0xc
+ 100 0011 2F040000 		.4byte	.LASF53
+ 101 0015 44040000 		.4byte	.LASF54
+ 102 0019 00000000 		.4byte	.Ldebug_ranges0+0
+ 103 001d 00000000 		.4byte	0
+ 104 0021 00000000 		.4byte	.Ldebug_line0
+ 105 0025 02       		.uleb128 0x2
+ 106 0026 02       		.byte	0x2
+ 107 0027 05       		.byte	0x5
+ 108 0028 07050000 		.4byte	.LASF0
+ARM GAS  C:\Users\boehm\AppData\Local\Temp\ccujyY7N.s 			page 5
+
+
+ 109 002c 02       		.uleb128 0x2
+ 110 002d 01       		.byte	0x1
+ 111 002e 08       		.byte	0x8
+ 112 002f 16020000 		.4byte	.LASF1
+ 113 0033 02       		.uleb128 0x2
+ 114 0034 01       		.byte	0x1
+ 115 0035 06       		.byte	0x6
+ 116 0036 C1050000 		.4byte	.LASF2
+ 117 003a 02       		.uleb128 0x2
+ 118 003b 02       		.byte	0x2
+ 119 003c 07       		.byte	0x7
+ 120 003d 5A010000 		.4byte	.LASF3
+ 121 0041 02       		.uleb128 0x2
+ 122 0042 04       		.byte	0x4
+ 123 0043 05       		.byte	0x5
+ 124 0044 1A050000 		.4byte	.LASF4
+ 125 0048 03       		.uleb128 0x3
+ 126 0049 9C020000 		.4byte	.LASF9
+ 127 004d 03       		.byte	0x3
+ 128 004e 41       		.byte	0x41
+ 129 004f 53000000 		.4byte	0x53
+ 130 0053 02       		.uleb128 0x2
+ 131 0054 04       		.byte	0x4
+ 132 0055 07       		.byte	0x7
+ 133 0056 48020000 		.4byte	.LASF5
+ 134 005a 02       		.uleb128 0x2
+ 135 005b 08       		.byte	0x8
+ 136 005c 05       		.byte	0x5
+ 137 005d AC040000 		.4byte	.LASF6
+ 138 0061 02       		.uleb128 0x2
+ 139 0062 08       		.byte	0x8
+ 140 0063 07       		.byte	0x7
+ 141 0064 9F030000 		.4byte	.LASF7
+ 142 0068 04       		.uleb128 0x4
+ 143 0069 04       		.byte	0x4
+ 144 006a 05       		.byte	0x5
+ 145 006b 696E7400 		.ascii	"int\000"
+ 146 006f 02       		.uleb128 0x2
+ 147 0070 04       		.byte	0x4
+ 148 0071 07       		.byte	0x7
+ 149 0072 74030000 		.4byte	.LASF8
+ 150 0076 03       		.uleb128 0x3
+ 151 0077 11050000 		.4byte	.LASF10
+ 152 007b 04       		.byte	0x4
+ 153 007c 30       		.byte	0x30
+ 154 007d 48000000 		.4byte	0x48
+ 155 0081 02       		.uleb128 0x2
+ 156 0082 04       		.byte	0x4
+ 157 0083 07       		.byte	0x7
+ 158 0084 3B040000 		.4byte	.LASF11
+ 159 0088 02       		.uleb128 0x2
+ 160 0089 08       		.byte	0x8
+ 161 008a 04       		.byte	0x4
+ 162 008b 23050000 		.4byte	.LASF12
+ 163 008f 05       		.uleb128 0x5
+ 164 0090 E4050000 		.4byte	.LASF13
+ 165 0094 05       		.byte	0x5
+ARM GAS  C:\Users\boehm\AppData\Local\Temp\ccujyY7N.s 			page 6
+
+
+ 166 0095 C401     		.2byte	0x1c4
+ 167 0097 9B000000 		.4byte	0x9b
+ 168 009b 02       		.uleb128 0x2
+ 169 009c 01       		.byte	0x1
+ 170 009d 08       		.byte	0x8
+ 171 009e D8040000 		.4byte	.LASF14
+ 172 00a2 02       		.uleb128 0x2
+ 173 00a3 04       		.byte	0x4
+ 174 00a4 04       		.byte	0x4
+ 175 00a5 EA010000 		.4byte	.LASF15
+ 176 00a9 02       		.uleb128 0x2
+ 177 00aa 08       		.byte	0x8
+ 178 00ab 04       		.byte	0x4
+ 179 00ac D8020000 		.4byte	.LASF16
+ 180 00b0 02       		.uleb128 0x2
+ 181 00b1 01       		.byte	0x1
+ 182 00b2 02       		.byte	0x2
+ 183 00b3 EB050000 		.4byte	.LASF17
+ 184 00b7 06       		.uleb128 0x6
+ 185 00b8 04       		.byte	0x4
+ 186 00b9 6F000000 		.4byte	0x6f
+ 187 00bd 08       		.byte	0x8
+ 188 00be B204     		.2byte	0x4b2
+ 189 00c0 D0010000 		.4byte	0x1d0
+ 190 00c4 07       		.uleb128 0x7
+ 191 00c5 9B000000 		.4byte	.LASF18
+ 192 00c9 00       		.byte	0
+ 193 00ca 08       		.uleb128 0x8
+ 194 00cb B4020000 		.4byte	.LASF19
+ 195 00cf 01001400 		.4byte	0x140001
+ 196 00d3 08       		.uleb128 0x8
+ 197 00d4 7D020000 		.4byte	.LASF20
+ 198 00d8 01001600 		.4byte	0x160001
+ 199 00dc 08       		.uleb128 0x8
+ 200 00dd 3B010000 		.4byte	.LASF21
+ 201 00e1 02001600 		.4byte	0x160002
+ 202 00e5 08       		.uleb128 0x8
+ 203 00e6 75000000 		.4byte	.LASF22
+ 204 00ea 03001600 		.4byte	0x160003
+ 205 00ee 08       		.uleb128 0x8
+ 206 00ef 24020000 		.4byte	.LASF23
+ 207 00f3 04001600 		.4byte	0x160004
+ 208 00f7 08       		.uleb128 0x8
+ 209 00f8 BB010000 		.4byte	.LASF24
+ 210 00fc 05001600 		.4byte	0x160005
+ 211 0100 08       		.uleb128 0x8
+ 212 0101 5A000000 		.4byte	.LASF25
+ 213 0105 06001600 		.4byte	0x160006
+ 214 0109 08       		.uleb128 0x8
+ 215 010a 81030000 		.4byte	.LASF26
+ 216 010e 07001600 		.4byte	0x160007
+ 217 0112 08       		.uleb128 0x8
+ 218 0113 5A020000 		.4byte	.LASF27
+ 219 0117 08001600 		.4byte	0x160008
+ 220 011b 08       		.uleb128 0x8
+ 221 011c 9C010000 		.4byte	.LASF28
+ 222 0120 09001600 		.4byte	0x160009
+ARM GAS  C:\Users\boehm\AppData\Local\Temp\ccujyY7N.s 			page 7
+
+
+ 223 0124 08       		.uleb128 0x8
+ 224 0125 44000000 		.4byte	.LASF29
+ 225 0129 0A001600 		.4byte	0x16000a
+ 226 012d 08       		.uleb128 0x8
+ 227 012e 12030000 		.4byte	.LASF30
+ 228 0132 0B001600 		.4byte	0x16000b
+ 229 0136 08       		.uleb128 0x8
+ 230 0137 2A030000 		.4byte	.LASF31
+ 231 013b 0C001600 		.4byte	0x16000c
+ 232 013f 08       		.uleb128 0x8
+ 233 0140 DD040000 		.4byte	.LASF32
+ 234 0144 0D001600 		.4byte	0x16000d
+ 235 0148 08       		.uleb128 0x8
+ 236 0149 F8000000 		.4byte	.LASF33
+ 237 014d 0E001600 		.4byte	0x16000e
+ 238 0151 08       		.uleb128 0x8
+ 239 0152 6D010000 		.4byte	.LASF34
+ 240 0156 0F001600 		.4byte	0x16000f
+ 241 015a 08       		.uleb128 0x8
+ 242 015b E5030000 		.4byte	.LASF35
+ 243 015f 10001600 		.4byte	0x160010
+ 244 0163 08       		.uleb128 0x8
+ 245 0164 AA000000 		.4byte	.LASF36
+ 246 0168 11001600 		.4byte	0x160011
+ 247 016c 08       		.uleb128 0x8
+ 248 016d 09040000 		.4byte	.LASF37
+ 249 0171 12001600 		.4byte	0x160012
+ 250 0175 08       		.uleb128 0x8
+ 251 0176 F0010000 		.4byte	.LASF38
+ 252 017a 13001600 		.4byte	0x160013
+ 253 017e 08       		.uleb128 0x8
+ 254 017f F5020000 		.4byte	.LASF39
+ 255 0183 14001600 		.4byte	0x160014
+ 256 0187 08       		.uleb128 0x8
+ 257 0188 BA040000 		.4byte	.LASF40
+ 258 018c 15001600 		.4byte	0x160015
+ 259 0190 08       		.uleb128 0x8
+ 260 0191 00000000 		.4byte	.LASF41
+ 261 0195 16001600 		.4byte	0x160016
+ 262 0199 08       		.uleb128 0x8
+ 263 019a DE000000 		.4byte	.LASF42
+ 264 019e 17001600 		.4byte	0x160017
+ 265 01a2 08       		.uleb128 0x8
+ 266 01a3 CB030000 		.4byte	.LASF43
+ 267 01a7 18001600 		.4byte	0x160018
+ 268 01ab 08       		.uleb128 0x8
+ 269 01ac 50030000 		.4byte	.LASF44
+ 270 01b0 19001600 		.4byte	0x160019
+ 271 01b4 08       		.uleb128 0x8
+ 272 01b5 1E010000 		.4byte	.LASF45
+ 273 01b9 FE001600 		.4byte	0x1600fe
+ 274 01bd 08       		.uleb128 0x8
+ 275 01be 29000000 		.4byte	.LASF46
+ 276 01c2 FF001600 		.4byte	0x1600ff
+ 277 01c6 08       		.uleb128 0x8
+ 278 01c7 DF020000 		.4byte	.LASF47
+ 279 01cb FFFF1600 		.4byte	0x16ffff
+ARM GAS  C:\Users\boehm\AppData\Local\Temp\ccujyY7N.s 			page 8
+
+
+ 280 01cf 00       		.byte	0
+ 281 01d0 09       		.uleb128 0x9
+ 282 01d1 09020000 		.4byte	.LASF55
+ 283 01d5 02       		.byte	0x2
+ 284 01d6 53       		.byte	0x53
+ 285 01d7 03       		.byte	0x3
+ 286 01d8 0A       		.uleb128 0xa
+ 287 01d9 F0020000 		.4byte	.LASF56
+ 288 01dd 01       		.byte	0x1
+ 289 01de 0E       		.byte	0xe
+ 290 01df 68000000 		.4byte	0x68
+ 291 01e3 00000000 		.4byte	.LFB276
+ 292 01e7 2C000000 		.4byte	.LFE276-.LFB276
+ 293 01eb 01       		.uleb128 0x1
+ 294 01ec 9C       		.byte	0x9c
+ 295 01ed 50020000 		.4byte	0x250
+ 296 01f1 0B       		.uleb128 0xb
+ 297 01f2 D0010000 		.4byte	0x1d0
+ 298 01f6 02000000 		.4byte	.LBB4
+ 299 01fa 02000000 		.4byte	.LBE4-.LBB4
+ 300 01fe 01       		.byte	0x1
+ 301 01ff 10       		.byte	0x10
+ 302 0200 0C       		.uleb128 0xc
+ 303 0201 0A000000 		.4byte	.LVL0
+ 304 0205 50020000 		.4byte	0x250
+ 305 0209 13020000 		.4byte	0x213
+ 306 020d 0D       		.uleb128 0xd
+ 307 020e 01       		.uleb128 0x1
+ 308 020f 50       		.byte	0x50
+ 309 0210 01       		.uleb128 0x1
+ 310 0211 30       		.byte	0x30
+ 311 0212 00       		.byte	0
+ 312 0213 0C       		.uleb128 0xc
+ 313 0214 14000000 		.4byte	.LVL1
+ 314 0218 5B020000 		.4byte	0x25b
+ 315 021c 2A020000 		.4byte	0x22a
+ 316 0220 0D       		.uleb128 0xd
+ 317 0221 01       		.uleb128 0x1
+ 318 0222 50       		.byte	0x50
+ 319 0223 05       		.uleb128 0x5
+ 320 0224 0C       		.byte	0xc
+ 321 0225 00000810 		.4byte	0x10080000
+ 322 0229 00       		.byte	0
+ 323 022a 0C       		.uleb128 0xc
+ 324 022b 1E000000 		.4byte	.LVL2
+ 325 022f 67020000 		.4byte	0x267
+ 326 0233 46020000 		.4byte	0x246
+ 327 0237 0D       		.uleb128 0xd
+ 328 0238 01       		.uleb128 0x1
+ 329 0239 50       		.byte	0x50
+ 330 023a 05       		.uleb128 0x5
+ 331 023b 03       		.byte	0x3
+ 332 023c 00000000 		.4byte	.LC0
+ 333 0240 0D       		.uleb128 0xd
+ 334 0241 01       		.uleb128 0x1
+ 335 0242 51       		.byte	0x51
+ 336 0243 01       		.uleb128 0x1
+ARM GAS  C:\Users\boehm\AppData\Local\Temp\ccujyY7N.s 			page 9
+
+
+ 337 0244 4B       		.byte	0x4b
+ 338 0245 00       		.byte	0
+ 339 0246 0E       		.uleb128 0xe
+ 340 0247 22000000 		.4byte	.LVL3
+ 341 024b 73020000 		.4byte	0x273
+ 342 024f 00       		.byte	0
+ 343 0250 0F       		.uleb128 0xf
+ 344 0251 A7020000 		.4byte	.LASF48
+ 345 0255 A7020000 		.4byte	.LASF48
+ 346 0259 06       		.byte	0x6
+ 347 025a 24       		.byte	0x24
+ 348 025b 10       		.uleb128 0x10
+ 349 025c DA010000 		.4byte	.LASF49
+ 350 0260 DA010000 		.4byte	.LASF49
+ 351 0264 07       		.byte	0x7
+ 352 0265 FE01     		.2byte	0x1fe
+ 353 0267 10       		.uleb128 0x10
+ 354 0268 CD050000 		.4byte	.LASF50
+ 355 026c CD050000 		.4byte	.LASF50
+ 356 0270 05       		.byte	0x5
+ 357 0271 2A03     		.2byte	0x32a
+ 358 0273 10       		.uleb128 0x10
+ 359 0274 B6030000 		.4byte	.LASF51
+ 360 0278 B6030000 		.4byte	.LASF51
+ 361 027c 08       		.byte	0x8
+ 362 027d A407     		.2byte	0x7a4
+ 363 027f 00       		.byte	0
+ 364              		.section	.debug_abbrev,"",%progbits
+ 365              	.Ldebug_abbrev0:
+ 366 0000 01       		.uleb128 0x1
+ 367 0001 11       		.uleb128 0x11
+ 368 0002 01       		.byte	0x1
+ 369 0003 25       		.uleb128 0x25
+ 370 0004 0E       		.uleb128 0xe
+ 371 0005 13       		.uleb128 0x13
+ 372 0006 0B       		.uleb128 0xb
+ 373 0007 03       		.uleb128 0x3
+ 374 0008 0E       		.uleb128 0xe
+ 375 0009 1B       		.uleb128 0x1b
+ 376 000a 0E       		.uleb128 0xe
+ 377 000b 55       		.uleb128 0x55
+ 378 000c 17       		.uleb128 0x17
+ 379 000d 11       		.uleb128 0x11
+ 380 000e 01       		.uleb128 0x1
+ 381 000f 10       		.uleb128 0x10
+ 382 0010 17       		.uleb128 0x17
+ 383 0011 00       		.byte	0
+ 384 0012 00       		.byte	0
+ 385 0013 02       		.uleb128 0x2
+ 386 0014 24       		.uleb128 0x24
+ 387 0015 00       		.byte	0
+ 388 0016 0B       		.uleb128 0xb
+ 389 0017 0B       		.uleb128 0xb
+ 390 0018 3E       		.uleb128 0x3e
+ 391 0019 0B       		.uleb128 0xb
+ 392 001a 03       		.uleb128 0x3
+ 393 001b 0E       		.uleb128 0xe
+ARM GAS  C:\Users\boehm\AppData\Local\Temp\ccujyY7N.s 			page 10
+
+
+ 394 001c 00       		.byte	0
+ 395 001d 00       		.byte	0
+ 396 001e 03       		.uleb128 0x3
+ 397 001f 16       		.uleb128 0x16
+ 398 0020 00       		.byte	0
+ 399 0021 03       		.uleb128 0x3
+ 400 0022 0E       		.uleb128 0xe
+ 401 0023 3A       		.uleb128 0x3a
+ 402 0024 0B       		.uleb128 0xb
+ 403 0025 3B       		.uleb128 0x3b
+ 404 0026 0B       		.uleb128 0xb
+ 405 0027 49       		.uleb128 0x49
+ 406 0028 13       		.uleb128 0x13
+ 407 0029 00       		.byte	0
+ 408 002a 00       		.byte	0
+ 409 002b 04       		.uleb128 0x4
+ 410 002c 24       		.uleb128 0x24
+ 411 002d 00       		.byte	0
+ 412 002e 0B       		.uleb128 0xb
+ 413 002f 0B       		.uleb128 0xb
+ 414 0030 3E       		.uleb128 0x3e
+ 415 0031 0B       		.uleb128 0xb
+ 416 0032 03       		.uleb128 0x3
+ 417 0033 08       		.uleb128 0x8
+ 418 0034 00       		.byte	0
+ 419 0035 00       		.byte	0
+ 420 0036 05       		.uleb128 0x5
+ 421 0037 16       		.uleb128 0x16
+ 422 0038 00       		.byte	0
+ 423 0039 03       		.uleb128 0x3
+ 424 003a 0E       		.uleb128 0xe
+ 425 003b 3A       		.uleb128 0x3a
+ 426 003c 0B       		.uleb128 0xb
+ 427 003d 3B       		.uleb128 0x3b
+ 428 003e 05       		.uleb128 0x5
+ 429 003f 49       		.uleb128 0x49
+ 430 0040 13       		.uleb128 0x13
+ 431 0041 00       		.byte	0
+ 432 0042 00       		.byte	0
+ 433 0043 06       		.uleb128 0x6
+ 434 0044 04       		.uleb128 0x4
+ 435 0045 01       		.byte	0x1
+ 436 0046 0B       		.uleb128 0xb
+ 437 0047 0B       		.uleb128 0xb
+ 438 0048 49       		.uleb128 0x49
+ 439 0049 13       		.uleb128 0x13
+ 440 004a 3A       		.uleb128 0x3a
+ 441 004b 0B       		.uleb128 0xb
+ 442 004c 3B       		.uleb128 0x3b
+ 443 004d 05       		.uleb128 0x5
+ 444 004e 01       		.uleb128 0x1
+ 445 004f 13       		.uleb128 0x13
+ 446 0050 00       		.byte	0
+ 447 0051 00       		.byte	0
+ 448 0052 07       		.uleb128 0x7
+ 449 0053 28       		.uleb128 0x28
+ 450 0054 00       		.byte	0
+ARM GAS  C:\Users\boehm\AppData\Local\Temp\ccujyY7N.s 			page 11
+
+
+ 451 0055 03       		.uleb128 0x3
+ 452 0056 0E       		.uleb128 0xe
+ 453 0057 1C       		.uleb128 0x1c
+ 454 0058 0B       		.uleb128 0xb
+ 455 0059 00       		.byte	0
+ 456 005a 00       		.byte	0
+ 457 005b 08       		.uleb128 0x8
+ 458 005c 28       		.uleb128 0x28
+ 459 005d 00       		.byte	0
+ 460 005e 03       		.uleb128 0x3
+ 461 005f 0E       		.uleb128 0xe
+ 462 0060 1C       		.uleb128 0x1c
+ 463 0061 06       		.uleb128 0x6
+ 464 0062 00       		.byte	0
+ 465 0063 00       		.byte	0
+ 466 0064 09       		.uleb128 0x9
+ 467 0065 2E       		.uleb128 0x2e
+ 468 0066 00       		.byte	0
+ 469 0067 03       		.uleb128 0x3
+ 470 0068 0E       		.uleb128 0xe
+ 471 0069 3A       		.uleb128 0x3a
+ 472 006a 0B       		.uleb128 0xb
+ 473 006b 3B       		.uleb128 0x3b
+ 474 006c 0B       		.uleb128 0xb
+ 475 006d 27       		.uleb128 0x27
+ 476 006e 19       		.uleb128 0x19
+ 477 006f 20       		.uleb128 0x20
+ 478 0070 0B       		.uleb128 0xb
+ 479 0071 00       		.byte	0
+ 480 0072 00       		.byte	0
+ 481 0073 0A       		.uleb128 0xa
+ 482 0074 2E       		.uleb128 0x2e
+ 483 0075 01       		.byte	0x1
+ 484 0076 3F       		.uleb128 0x3f
+ 485 0077 19       		.uleb128 0x19
+ 486 0078 03       		.uleb128 0x3
+ 487 0079 0E       		.uleb128 0xe
+ 488 007a 3A       		.uleb128 0x3a
+ 489 007b 0B       		.uleb128 0xb
+ 490 007c 3B       		.uleb128 0x3b
+ 491 007d 0B       		.uleb128 0xb
+ 492 007e 27       		.uleb128 0x27
+ 493 007f 19       		.uleb128 0x19
+ 494 0080 49       		.uleb128 0x49
+ 495 0081 13       		.uleb128 0x13
+ 496 0082 8701     		.uleb128 0x87
+ 497 0084 19       		.uleb128 0x19
+ 498 0085 11       		.uleb128 0x11
+ 499 0086 01       		.uleb128 0x1
+ 500 0087 12       		.uleb128 0x12
+ 501 0088 06       		.uleb128 0x6
+ 502 0089 40       		.uleb128 0x40
+ 503 008a 18       		.uleb128 0x18
+ 504 008b 9742     		.uleb128 0x2117
+ 505 008d 19       		.uleb128 0x19
+ 506 008e 01       		.uleb128 0x1
+ 507 008f 13       		.uleb128 0x13
+ARM GAS  C:\Users\boehm\AppData\Local\Temp\ccujyY7N.s 			page 12
+
+
+ 508 0090 00       		.byte	0
+ 509 0091 00       		.byte	0
+ 510 0092 0B       		.uleb128 0xb
+ 511 0093 1D       		.uleb128 0x1d
+ 512 0094 00       		.byte	0
+ 513 0095 31       		.uleb128 0x31
+ 514 0096 13       		.uleb128 0x13
+ 515 0097 11       		.uleb128 0x11
+ 516 0098 01       		.uleb128 0x1
+ 517 0099 12       		.uleb128 0x12
+ 518 009a 06       		.uleb128 0x6
+ 519 009b 58       		.uleb128 0x58
+ 520 009c 0B       		.uleb128 0xb
+ 521 009d 59       		.uleb128 0x59
+ 522 009e 0B       		.uleb128 0xb
+ 523 009f 00       		.byte	0
+ 524 00a0 00       		.byte	0
+ 525 00a1 0C       		.uleb128 0xc
+ 526 00a2 898201   		.uleb128 0x4109
+ 527 00a5 01       		.byte	0x1
+ 528 00a6 11       		.uleb128 0x11
+ 529 00a7 01       		.uleb128 0x1
+ 530 00a8 31       		.uleb128 0x31
+ 531 00a9 13       		.uleb128 0x13
+ 532 00aa 01       		.uleb128 0x1
+ 533 00ab 13       		.uleb128 0x13
+ 534 00ac 00       		.byte	0
+ 535 00ad 00       		.byte	0
+ 536 00ae 0D       		.uleb128 0xd
+ 537 00af 8A8201   		.uleb128 0x410a
+ 538 00b2 00       		.byte	0
+ 539 00b3 02       		.uleb128 0x2
+ 540 00b4 18       		.uleb128 0x18
+ 541 00b5 9142     		.uleb128 0x2111
+ 542 00b7 18       		.uleb128 0x18
+ 543 00b8 00       		.byte	0
+ 544 00b9 00       		.byte	0
+ 545 00ba 0E       		.uleb128 0xe
+ 546 00bb 898201   		.uleb128 0x4109
+ 547 00be 00       		.byte	0
+ 548 00bf 11       		.uleb128 0x11
+ 549 00c0 01       		.uleb128 0x1
+ 550 00c1 31       		.uleb128 0x31
+ 551 00c2 13       		.uleb128 0x13
+ 552 00c3 00       		.byte	0
+ 553 00c4 00       		.byte	0
+ 554 00c5 0F       		.uleb128 0xf
+ 555 00c6 2E       		.uleb128 0x2e
+ 556 00c7 00       		.byte	0
+ 557 00c8 3F       		.uleb128 0x3f
+ 558 00c9 19       		.uleb128 0x19
+ 559 00ca 3C       		.uleb128 0x3c
+ 560 00cb 19       		.uleb128 0x19
+ 561 00cc 6E       		.uleb128 0x6e
+ 562 00cd 0E       		.uleb128 0xe
+ 563 00ce 03       		.uleb128 0x3
+ 564 00cf 0E       		.uleb128 0xe
+ARM GAS  C:\Users\boehm\AppData\Local\Temp\ccujyY7N.s 			page 13
+
+
+ 565 00d0 3A       		.uleb128 0x3a
+ 566 00d1 0B       		.uleb128 0xb
+ 567 00d2 3B       		.uleb128 0x3b
+ 568 00d3 0B       		.uleb128 0xb
+ 569 00d4 00       		.byte	0
+ 570 00d5 00       		.byte	0
+ 571 00d6 10       		.uleb128 0x10
+ 572 00d7 2E       		.uleb128 0x2e
+ 573 00d8 00       		.byte	0
+ 574 00d9 3F       		.uleb128 0x3f
+ 575 00da 19       		.uleb128 0x19
+ 576 00db 3C       		.uleb128 0x3c
+ 577 00dc 19       		.uleb128 0x19
+ 578 00dd 6E       		.uleb128 0x6e
+ 579 00de 0E       		.uleb128 0xe
+ 580 00df 03       		.uleb128 0x3
+ 581 00e0 0E       		.uleb128 0xe
+ 582 00e1 3A       		.uleb128 0x3a
+ 583 00e2 0B       		.uleb128 0xb
+ 584 00e3 3B       		.uleb128 0x3b
+ 585 00e4 05       		.uleb128 0x5
+ 586 00e5 00       		.byte	0
+ 587 00e6 00       		.byte	0
+ 588 00e7 00       		.byte	0
+ 589              		.section	.debug_aranges,"",%progbits
+ 590 0000 1C000000 		.4byte	0x1c
+ 591 0004 0200     		.2byte	0x2
+ 592 0006 00000000 		.4byte	.Ldebug_info0
+ 593 000a 04       		.byte	0x4
+ 594 000b 00       		.byte	0
+ 595 000c 0000     		.2byte	0
+ 596 000e 0000     		.2byte	0
+ 597 0010 00000000 		.4byte	.LFB276
+ 598 0014 2C000000 		.4byte	.LFE276-.LFB276
+ 599 0018 00000000 		.4byte	0
+ 600 001c 00000000 		.4byte	0
+ 601              		.section	.debug_ranges,"",%progbits
+ 602              	.Ldebug_ranges0:
+ 603 0000 00000000 		.4byte	.LFB276
+ 604 0004 2C000000 		.4byte	.LFE276
+ 605 0008 00000000 		.4byte	0
+ 606 000c 00000000 		.4byte	0
+ 607              		.section	.debug_line,"",%progbits
+ 608              	.Ldebug_line0:
+ 609 0000 38020000 		.section	.debug_str,"MS",%progbits,1
+ 609      02000C02 
+ 609      00000201 
+ 609      FB0E0D00 
+ 609      01010101 
+ 610              	.LASF41:
+ 611 0000 43595F42 		.ascii	"CY_BLE_ERROR_GATT_DB_INVALID_ATTR_HANDLE\000"
+ 611      4C455F45 
+ 611      52524F52 
+ 611      5F474154 
+ 611      545F4442 
+ 612              	.LASF46:
+ 613 0029 43595F42 		.ascii	"CY_BLE_ERROR_INVALID_STATE\000"
+ARM GAS  C:\Users\boehm\AppData\Local\Temp\ccujyY7N.s 			page 14
+
+
+ 613      4C455F45 
+ 613      52524F52 
+ 613      5F494E56 
+ 613      414C4944 
+ 614              	.LASF29:
+ 615 0044 43595F42 		.ascii	"CY_BLE_ERROR_GAP_ROLE\000"
+ 615      4C455F45 
+ 615      52524F52 
+ 615      5F474150 
+ 615      5F524F4C 
+ 616              	.LASF25:
+ 617 005a 43595F42 		.ascii	"CY_BLE_ERROR_NO_CONNECTION\000"
+ 617      4C455F45 
+ 617      52524F52 
+ 617      5F4E4F5F 
+ 617      434F4E4E 
+ 618              	.LASF22:
+ 619 0075 43595F42 		.ascii	"CY_BLE_ERROR_MEMORY_ALLOCATION_FAILED\000"
+ 619      4C455F45 
+ 619      52524F52 
+ 619      5F4D454D 
+ 619      4F52595F 
+ 620              	.LASF18:
+ 621 009b 43595F42 		.ascii	"CY_BLE_SUCCESS\000"
+ 621      4C455F53 
+ 621      55434345 
+ 621      535300
+ 622              	.LASF36:
+ 623 00aa 43595F42 		.ascii	"CY_BLE_ERROR_UNSUPPORTED_FEATURE_OR_PARAMETER_VALUE"
+ 623      4C455F45 
+ 623      52524F52 
+ 623      5F554E53 
+ 623      5550504F 
+ 624 00dd 00       		.ascii	"\000"
+ 625              	.LASF42:
+ 626 00de 43595F42 		.ascii	"CY_BLE_ERROR_NTF_DISABLED\000"
+ 626      4C455F45 
+ 626      52524F52 
+ 626      5F4E5446 
+ 626      5F444953 
+ 627              	.LASF33:
+ 628 00f8 43595F42 		.ascii	"CY_BLE_ERROR_L2CAP_PSM_NOT_REGISTERED\000"
+ 628      4C455F45 
+ 628      52524F52 
+ 628      5F4C3243 
+ 628      41505F50 
+ 629              	.LASF45:
+ 630 011e 43595F42 		.ascii	"CY_BLE_ERROR_CONTROLLER_BUSY\000"
+ 630      4C455F45 
+ 630      52524F52 
+ 630      5F434F4E 
+ 630      54524F4C 
+ 631              	.LASF21:
+ 632 013b 43595F42 		.ascii	"CY_BLE_ERROR_INVALID_OPERATION\000"
+ 632      4C455F45 
+ 632      52524F52 
+ 632      5F494E56 
+ARM GAS  C:\Users\boehm\AppData\Local\Temp\ccujyY7N.s 			page 15
+
+
+ 632      414C4944 
+ 633              	.LASF3:
+ 634 015a 73686F72 		.ascii	"short unsigned int\000"
+ 634      7420756E 
+ 634      7369676E 
+ 634      65642069 
+ 634      6E7400
+ 635              	.LASF34:
+ 636 016d 43595F42 		.ascii	"CY_BLE_ERROR_L2CAP_CONNECTION_ENTITY_NOT_FOUND\000"
+ 636      4C455F45 
+ 636      52524F52 
+ 636      5F4C3243 
+ 636      41505F43 
+ 637              	.LASF28:
+ 638 019c 43595F42 		.ascii	"CY_BLE_ERROR_REPEATED_ATTEMPTS\000"
+ 638      4C455F45 
+ 638      52524F52 
+ 638      5F524550 
+ 638      45415445 
+ 639              	.LASF24:
+ 640 01bb 43595F42 		.ascii	"CY_BLE_ERROR_OOB_NOT_AVAILABLE\000"
+ 640      4C455F45 
+ 640      52524F52 
+ 640      5F4F4F42 
+ 640      5F4E4F54 
+ 641              	.LASF49:
+ 642 01da 43795F53 		.ascii	"Cy_SysEnableCM4\000"
+ 642      7973456E 
+ 642      61626C65 
+ 642      434D3400 
+ 643              	.LASF15:
+ 644 01ea 666C6F61 		.ascii	"float\000"
+ 644      7400
+ 645              	.LASF38:
+ 646 01f0 43595F42 		.ascii	"CY_BLE_ERROR_FLASH_WRITE\000"
+ 646      4C455F45 
+ 646      52524F52 
+ 646      5F464C41 
+ 646      53485F57 
+ 647              	.LASF55:
+ 648 0209 5F5F656E 		.ascii	"__enable_irq\000"
+ 648      61626C65 
+ 648      5F697271 
+ 648      00
+ 649              	.LASF1:
+ 650 0216 756E7369 		.ascii	"unsigned char\000"
+ 650      676E6564 
+ 650      20636861 
+ 650      7200
+ 651              	.LASF23:
+ 652 0224 43595F42 		.ascii	"CY_BLE_ERROR_INSUFFICIENT_RESOURCES\000"
+ 652      4C455F45 
+ 652      52524F52 
+ 652      5F494E53 
+ 652      55464649 
+ 653              	.LASF5:
+ 654 0248 6C6F6E67 		.ascii	"long unsigned int\000"
+ARM GAS  C:\Users\boehm\AppData\Local\Temp\ccujyY7N.s 			page 16
+
+
+ 654      20756E73 
+ 654      69676E65 
+ 654      6420696E 
+ 654      7400
+ 655              	.LASF27:
+ 656 025a 43595F42 		.ascii	"CY_BLE_ERROR_DEVICE_ALREADY_EXISTS\000"
+ 656      4C455F45 
+ 656      52524F52 
+ 656      5F444556 
+ 656      4943455F 
+ 657              	.LASF20:
+ 658 027d 43595F42 		.ascii	"CY_BLE_ERROR_INVALID_PARAMETER\000"
+ 658      4C455F45 
+ 658      52524F52 
+ 658      5F494E56 
+ 658      414C4944 
+ 659              	.LASF9:
+ 660 029c 5F5F7569 		.ascii	"__uint32_t\000"
+ 660      6E743332 
+ 660      5F7400
+ 661              	.LASF48:
+ 662 02a7 43795F42 		.ascii	"Cy_BLE_Start\000"
+ 662      4C455F53 
+ 662      74617274 
+ 662      00
+ 663              	.LASF19:
+ 664 02b4 43595F42 		.ascii	"CY_BLE_INFO_FLASH_WRITE_IN_PROGRESS\000"
+ 664      4C455F49 
+ 664      4E464F5F 
+ 664      464C4153 
+ 664      485F5752 
+ 665              	.LASF16:
+ 666 02d8 646F7562 		.ascii	"double\000"
+ 666      6C6500
+ 667              	.LASF47:
+ 668 02df 43595F42 		.ascii	"CY_BLE_ERROR_MAX\000"
+ 668      4C455F45 
+ 668      52524F52 
+ 668      5F4D4158 
+ 668      00
+ 669              	.LASF56:
+ 670 02f0 6D61696E 		.ascii	"main\000"
+ 670      00
+ 671              	.LASF39:
+ 672 02f5 43595F42 		.ascii	"CY_BLE_ERROR_MIC_AUTH_FAILED\000"
+ 672      4C455F45 
+ 672      52524F52 
+ 672      5F4D4943 
+ 672      5F415554 
+ 673              	.LASF30:
+ 674 0312 43595F42 		.ascii	"CY_BLE_ERROR_SEC_FAILED\000"
+ 674      4C455F45 
+ 674      52524F52 
+ 674      5F534543 
+ 674      5F464149 
+ 675              	.LASF31:
+ 676 032a 43595F42 		.ascii	"CY_BLE_ERROR_L2CAP_PSM_WRONG_ENCODING\000"
+ARM GAS  C:\Users\boehm\AppData\Local\Temp\ccujyY7N.s 			page 17
+
+
+ 676      4C455F45 
+ 676      52524F52 
+ 676      5F4C3243 
+ 676      41505F50 
+ 677              	.LASF44:
+ 678 0350 43595F42 		.ascii	"CY_BLE_ERROR_CHAR_IS_NOT_DISCOVERED\000"
+ 678      4C455F45 
+ 678      52524F52 
+ 678      5F434841 
+ 678      525F4953 
+ 679              	.LASF8:
+ 680 0374 756E7369 		.ascii	"unsigned int\000"
+ 680      676E6564 
+ 680      20696E74 
+ 680      00
+ 681              	.LASF26:
+ 682 0381 43595F42 		.ascii	"CY_BLE_ERROR_NO_DEVICE_ENTITY\000"
+ 682      4C455F45 
+ 682      52524F52 
+ 682      5F4E4F5F 
+ 682      44455649 
+ 683              	.LASF7:
+ 684 039f 6C6F6E67 		.ascii	"long long unsigned int\000"
+ 684      206C6F6E 
+ 684      6720756E 
+ 684      7369676E 
+ 684      65642069 
+ 685              	.LASF51:
+ 686 03b6 43795F42 		.ascii	"Cy_BLE_ProcessEvents\000"
+ 686      4C455F50 
+ 686      726F6365 
+ 686      73734576 
+ 686      656E7473 
+ 687              	.LASF43:
+ 688 03cb 43595F42 		.ascii	"CY_BLE_ERROR_IND_DISABLED\000"
+ 688      4C455F45 
+ 688      52524F52 
+ 688      5F494E44 
+ 688      5F444953 
+ 689              	.LASF35:
+ 690 03e5 43595F42 		.ascii	"CY_BLE_ERROR_L2CAP_PSM_NOT_IN_RANGE\000"
+ 690      4C455F45 
+ 690      52524F52 
+ 690      5F4C3243 
+ 690      41505F50 
+ 691              	.LASF37:
+ 692 0409 43595F42 		.ascii	"CY_BLE_ERROR_FLASH_WRITE_NOT_PERMITED\000"
+ 692      4C455F45 
+ 692      52524F52 
+ 692      5F464C41 
+ 692      53485F57 
+ 693              	.LASF53:
+ 694 042f 6D61696E 		.ascii	"main_cm0p.c\000"
+ 694      5F636D30 
+ 694      702E6300 
+ 695              	.LASF11:
+ 696 043b 73697A65 		.ascii	"sizetype\000"
+ARM GAS  C:\Users\boehm\AppData\Local\Temp\ccujyY7N.s 			page 18
+
+
+ 696      74797065 
+ 696      00
+ 697              	.LASF54:
+ 698 0444 433A5C55 		.ascii	"C:\\Users\\boehm\\OneDrive\\Dokumente\\PSoC Creator"
+ 698      73657273 
+ 698      5C626F65 
+ 698      686D5C4F 
+ 698      6E654472 
+ 699 0472 5C342E32 		.ascii	"\\4.2\\Projekt_Sensordatenerfassung\\BLE_Kommunikat"
+ 699      5C50726F 
+ 699      6A656B74 
+ 699      5F53656E 
+ 699      736F7264 
+ 700 04a2 696F6E2E 		.ascii	"ion.cydsn\000"
+ 700      63796473 
+ 700      6E00
+ 701              	.LASF6:
+ 702 04ac 6C6F6E67 		.ascii	"long long int\000"
+ 702      206C6F6E 
+ 702      6720696E 
+ 702      7400
+ 703              	.LASF40:
+ 704 04ba 43595F42 		.ascii	"CY_BLE_ERROR_HARDWARE_FAILURE\000"
+ 704      4C455F45 
+ 704      52524F52 
+ 704      5F484152 
+ 704      44574152 
+ 705              	.LASF14:
+ 706 04d8 63686172 		.ascii	"char\000"
+ 706      00
+ 707              	.LASF32:
+ 708 04dd 43595F42 		.ascii	"CY_BLE_ERROR_L2CAP_PSM_ALREADY_REGISTERED\000"
+ 708      4C455F45 
+ 708      52524F52 
+ 708      5F4C3243 
+ 708      41505F50 
+ 709              	.LASF0:
+ 710 0507 73686F72 		.ascii	"short int\000"
+ 710      7420696E 
+ 710      7400
+ 711              	.LASF10:
+ 712 0511 75696E74 		.ascii	"uint32_t\000"
+ 712      33325F74 
+ 712      00
+ 713              	.LASF4:
+ 714 051a 6C6F6E67 		.ascii	"long int\000"
+ 714      20696E74 
+ 714      00
+ 715              	.LASF12:
+ 716 0523 6C6F6E67 		.ascii	"long double\000"
+ 716      20646F75 
+ 716      626C6500 
+ 717              	.LASF52:
+ 718 052f 474E5520 		.ascii	"GNU C11 5.4.1 20160609 (release) [ARM/embedded-5-br"
+ 718      43313120 
+ 718      352E342E 
+ 718      31203230 
+ARM GAS  C:\Users\boehm\AppData\Local\Temp\ccujyY7N.s 			page 19
+
+
+ 718      31363036 
+ 719 0562 616E6368 		.ascii	"anch revision 237715] -mcpu=cortex-m0plus -mthumb -"
+ 719      20726576 
+ 719      6973696F 
+ 719      6E203233 
+ 719      37373135 
+ 720 0595 67202D4F 		.ascii	"g -Og -ffunction-sections -ffat-lto-objects\000"
+ 720      67202D66 
+ 720      66756E63 
+ 720      74696F6E 
+ 720      2D736563 
+ 721              	.LASF2:
+ 722 05c1 7369676E 		.ascii	"signed char\000"
+ 722      65642063 
+ 722      68617200 
+ 723              	.LASF50:
+ 724 05cd 43795F53 		.ascii	"Cy_SysLib_AssertFailed\000"
+ 724      79734C69 
+ 724      625F4173 
+ 724      73657274 
+ 724      4661696C 
+ 725              	.LASF13:
+ 726 05e4 63686172 		.ascii	"char_t\000"
+ 726      5F7400
+ 727              	.LASF17:
+ 728 05eb 5F426F6F 		.ascii	"_Bool\000"
+ 728      6C00
+ 729              		.ident	"GCC: (GNU Tools for ARM Embedded Processors) 5.4.1 20160609 (release) [ARM/embedded-5-bran

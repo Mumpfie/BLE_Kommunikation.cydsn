@@ -1,0 +1,25 @@
+(DELAYFILE
+ (SDFVERSION "IEEE 1497 4.0")
+ (DATE "2018-05-25T19:43:02Z")
+ (DESIGN "BLE_Kommunikation")
+ (VENDOR "Cypress Semiconductor")
+ (PROGRAM "PSoC Creator")
+ (VERSION " 4.2")
+ (DIVIDER .)
+ (TIMESCALE 1 ns)
+ (CELL
+  (CELLTYPE "BLE_Kommunikation")
+  (INSTANCE *)
+  (DELAY
+   (ABSOLUTE
+    (INTERCONNECT CY_CPUSS_SWJ_SWCLK_TCLK\(0\).fb CPUSS.swj_swclk_tclk (0.000:0.000:0.000))
+    (INTERCONNECT CY_CPUSS_SWJ_SWDIO_TMS\(0\).fb CPUSS.swj_swdio_tms (0.000:0.000:0.000))
+    (INTERCONNECT ClockBlock.periclk \\BLE\:bless_isr\\.clock (0.000:0.000:0.000))
+    (INTERCONNECT ClockBlock.periclk isr_LED.clock (0.000:0.000:0.000))
+    (INTERCONNECT \\MCWDT\:MCWDT\\.interrupt isr_LED.interrupt (0.000:0.000:0.000))
+    (INTERCONNECT \\BLE\:cy_mxs40_ble\\.interrupt \\BLE\:bless_isr\\.interrupt (0.000:0.000:0.000))
+    (INTERCONNECT LED\(0\)_PAD LED\(0\).pad_in (0.000:0.000:0.000))
+   )
+  )
+ )
+)
